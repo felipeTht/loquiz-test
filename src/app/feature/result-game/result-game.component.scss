@@ -1,0 +1,19 @@
+.result-game {
+  .selection-game {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    .mat-flat-button {
+      margin-left: 11px;
+      background-color: #3dc2fb;
+      color: #fff;
+    }
+    .mat-icon {
+      color: #3dc2fb;
+    }
+  }
+  .result {
+    margin-top: 25px;
+  }
+}
