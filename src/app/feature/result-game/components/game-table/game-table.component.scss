@@ -1,0 +1,37 @@
+.game-table-container {
+  .game-table {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    .mat-header-row {
+      background-color: #3dc2fb;
+      .mat-header-cell {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+    }
+    tr.mat-row {
+      td:nth-child(1) {
+        width: 40%;
+      }
+      td:nth-child(2) {
+        width: 16px;
+      }
+      td:nth-child(3) {
+        width: 16px;
+      }
+      td:nth-child(4) {
+        width: 16px;
+      }
+      td:nth-child(5) {
+        width: 10%;
+        text-align: center;
+      }
+    }
+    tr.mat-row:last-child {
+      td {
+        border: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<section class="section result-game">
+  <form class="selection-game" [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Game id</mat-label>
+      <input
+        matInput
+        placeholder="Insert the game id"
+        formControlName="gameId"
+      />
+      <mat-icon matSuffix>place</mat-icon>
+    </mat-form-field>
+    <button mat-flat-button (click)="searchGame()" [disabled]="!form.valid">
+      Search
+    </button>
+  </form>
+
+  <div class="result" *ngIf="!!game">
+    <h1>{{ game.title }}</h1>
+
+    <lq-game-table
+      [data]="teams"
+      [pageSize]="pageSize"
+      [total]="totalElements"
+      (onChangePage)="loadTable($event)"
+    ></lq-game-table>
+  </div>
+</section>

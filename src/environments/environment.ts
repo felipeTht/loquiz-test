@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: 'd64642249a14413ac83fdf40b57192b7be1bfb715a3e74519e279b3ee5eaf426',
+  apiBaseUrl: 'https://api.loquiz.com/v3',
+  games: 'games',
+  results: 'results',
 };
 
 /*
